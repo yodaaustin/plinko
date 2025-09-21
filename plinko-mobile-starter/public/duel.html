@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Duel Mode</title>
+  <link rel="stylesheet" href="./styles.css"/>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+  <div style="padding:12px">
+    <h2>Duel</h2>
+    <div>Room: <input id="room" placeholder="room-123" value="room-123"/> <button id="join">Join</button></div>
+    <div>Players in room: <span id="players">0</span></div>
+    <div style="margin-top:10px">
+      <label>Bet</label><input id="bet" type="number" value="100"/>
+      <button id="drop">Drop</button>
+    </div>
+    <pre id="log" style="background:#111;padding:8px;color:#cfe;min-height:220px"></pre>
+  </div>
+  <script src="./multiplayer.js"></script>
+</body>
+</html>
